@@ -22,6 +22,7 @@ public class UncleRiccosTimeMachine {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		header();
+		setHighLow(true);
 	}
 	/**
 	 * header - prints the console output at the top of the program.
@@ -30,5 +31,20 @@ public class UncleRiccosTimeMachine {
 	{
 		System.out.println();
 		System.out.println("Uncle Rocco's Time Machine.");
+	}
+	
+	
+	private static Boolean highLow = false;
+	/**
+	 * Set highlow property.
+	 * @param value
+	 */
+	public static void setHighLow(Boolean value)
+	{
+		highLow = value;
+	}
+	public static Boolean getHighLow()
+	{
+		return highLow;
 	}
 }
